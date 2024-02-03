@@ -1,0 +1,54 @@
+.desktop{
+    display: flex;
+    height: 100%;
+    margin: 1%;
+}
+
+.logoAlura{
+    margin: 1%;
+    width: 60px;
+    height: 24px;
+}
+
+.entrada{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: auto;
+    background-color: rgb(255, 255, 0);
+    align-items: start;
+    padding: 2%;
+    gap: 5px;
+}
+
+input, button {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.entrada .botoes {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.mensagem{
+    width: 648px;
+    align-items: center;
+}
+.codificador{
+    align-items: center;
+    height: 4%;
+}
+.decodificador{
+    align-items: center;
+    height: 4%;
+}
+
+.saida{
+    width: 30%;
+    height: auto;
+    background-color: blue;
+    align-items: center;
+    padding: 2%;
+}
