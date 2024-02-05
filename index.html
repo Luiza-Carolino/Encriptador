@@ -12,7 +12,7 @@
     <div class="desktop">
 
         <div class="entrada">
-            <textarea name="mensagem" class="mensagem" rows="25" placeholder="Digite aqui seu texto..."></textarea>
+            <textarea name="mensagem" class="mensagem" rows="20" placeholder="Digite aqui seu texto..."></textarea>
             <p class="aviso"> &#10069; Utilize apenas letras minúsculas e sem acento</p>
             <p class="erroLetraMaiuscula">&#9888; Utilize apenas letras minúsculas</p>
             <p class="erroAcento">&#9888; Utilize letras sem acentuação, ex: pão = pao</p>
@@ -27,7 +27,11 @@
             <textarea name="resultado" class="resultado" rows="30" placeholder="Resultado" disabled readonly></textarea>
             <!-- <p>Mensagem copiada com sucesso!</p> -->
             <img class="foto" src="imgs/foto.png" alt="">
-            <p class="erroSemTexto">Nenhum texto foi encontrado</p>
+            <div class="semFoto">
+                
+                <h2 class="erroSemTextoh1">Nenhum mensagem encontrada</h2>
+                <p class="erroSemTextop">Digite um texto que deseja criptografar ou descriptografar</p>
+            </div>
             <span class="botoes">
                 <button class="copiar" onclick="copiarTexto()">copiar</button>
             </span>

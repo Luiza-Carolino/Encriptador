@@ -2,12 +2,16 @@
 function renderizarResultado(texto) {
     if(texto) {
         document.getElementsByClassName("foto")[0].style.display = "none";
-        document.getElementsByClassName("erroSemTexto")[0].style.display = "none";
+        document.getElementsByClassName("erroSemTextop")[0].style.display = "none";
+        document.getElementsByClassName("erroSemTextoh1")[0].style.display = "none";
         document.getElementsByClassName("resultado")[0].style.display = "block";
+        document.getElementsByClassName("copiar")[0].style.display = "block";
     } else {
         document.getElementsByClassName("foto")[0].style.display = "block";
-        document.getElementsByClassName("erroSemTexto")[0].style.display = "block";
+        document.getElementsByClassName("erroSemTextop")[0].style.display = "block";
+        document.getElementsByClassName("erroSemTextoh1")[0].style.display = "block";
         document.getElementsByClassName("resultado")[0].style.display = "none";
+        document.getElementsByClassName("copiar")[0].style.display = "none";
     }
 }
 
