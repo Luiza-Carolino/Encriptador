@@ -50,18 +50,26 @@ function verificarTexto(texto){
 function criptografarTexto(){
     const texto = document.getElementsByClassName("mensagem")[0]?.value;
     if(verificarTexto(texto)) {
-        document.getElementsByClassName("resultado")[0].value = texto;
+        let textoCodificado = texto.replace(/e/g, "enter").replace(/i/g, "imes").replace(/a/g, "ai").replace(/o/g, "ober").replace(/u/g, "ufat");
+        document.getElementsByClassName("resultado")[0].value = textoCodificado;
         document.getElementsByClassName("mensagem")[0].value = '';
     };
     renderizarResultado(texto);
     console.log(texto);
 
+    
+
 }
 
 function descriptografarTexto(){
-    const resultado = document.getElementsByClassName("resultado")[0]?.value;
-    console.log('decodificar texto');
-    document.getElementsByClassName("resultado")[0].value = '';
+    const texto = document.getElementsByClassName("mensagem")[0]?.value;
+    if(verificarTexto(texto)) {
+        let textoDecodificado = texto.replace(/enter/g, "e").replace(/imes/g, "i").replace(/ai/g, "a").replace(/ober/g, "o").replace(/ufat/g, "u");
+        document.getElementsByClassName("resultado")[0].value = textoDecodificado;
+        document.getElementsByClassName("mensagem")[0].value = '';
+    };
+    renderizarResultado(texto);
+    console.log(texto);
 }
 
 function copiarTexto (){
