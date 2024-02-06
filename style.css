@@ -1,7 +1,11 @@
+body{
+    background-color: rgb(194, 228, 255);
+}
 .desktop{
     display: flex;
-    height: 100%;
-    margin: 1%;
+    height: 85dvh;
+    max-height: 85dvh;
+    overflow: hidden;
 }
 
 .logoAlura{
@@ -14,41 +18,95 @@
     display: flex;
     flex-direction: column;
     width: 70%;
-    height: auto;
-    background-color: rgb(255, 255, 0);
+    height: 100%;
+
     align-items: start;
     padding: 2%;
-    gap: 5px;
+    /* gap: 30px; */
+    padding-left: 10%;
+    margin-left: 30px;
 }
 
-input, button {
+button {
     border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 32px;
+    padding: 1%;
+}
+
+textarea{
     border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.0);
+    padding: 20px;
+    font-size: 20px;
 }
 
 .entrada .botoes {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 100px;
+    padding-left: 15%;
+}
+.saida .botoes {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
 
 .mensagem{
-    width: 648px;
+    width: 90%;
     align-items: center;
+    resize: none;
+    background-color: rgb(194, 228, 255);
+
 }
-.codificador{
-    align-items: center;
-    height: 4%;
+.resultado{
+    width: 80%;
+    resize: none;
 }
-.decodificador{
-    align-items: center;
-    height: 4%;
+.codificar, .decodificar, .copiar{
+    font-size: 25px;
+    width: 250px;
+    height: 60px;
+    text-align: center;
+    background-color: #0A3871;
+    color: white;
 }
 
 .saida{
     width: 30%;
+    display: flex;
+    flex-direction: column;
     height: auto;
-    background-color: blue;
+    background-color: rgb(255, 255, 255);
+    border-radius: 32px;
     align-items: center;
+    /* gap: 30px; */
     padding: 2%;
+    margin-right: 30px;
+}
+
+.erroLetraMaiuscula, .erroAcento {
+    display: none;
+    color: red;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.aviso {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+textarea:focus {
+    outline: none
+}
+
+.resultado {
+    display: none;
+}
+
+.foto {
+    align-items: center;
 }

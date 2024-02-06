@@ -5,22 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Criptografador</title>
     <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
 </head>
 <body>
     <img class="logoAlura" src="imgs/logoAlura.png" alt="logoAlura">
     <div class="desktop">
 
         <div class="entrada">
-            <input class="mensagem" type="text">
+            <textarea name="mensagem" class="mensagem" rows="25" placeholder="Digite aqui seu texto..."></textarea>
+            <p class="aviso"> &#10069; Utilize apenas letras minúsculas e sem acento</p>
+            <p class="erroLetraMaiuscula">&#9888; Utilize apenas letras minúsculas</p>
+            <p class="erroAcento">&#9888; Utilize letras sem acentuação, ex: pão = pao</p>
             <span class="botoes">
-                <button class="codificar">codificar</button>
-                <button class="decodificar">decodificar</button>
+                <button class="codificar" onclick="criptografarTexto()">Criptografar</button>
+                <button class="decodificar" onclick="descriptografarTexto()">Descriptografar</button>
             </span>
+            
         </div>
 
         <div class="saida">
-            <input type="text">
-            <button>copiar</button>
+            <textarea name="resultado" class="resultado" rows="30" placeholder="Resultado" disabled readonly></textarea>
+            <!-- <p>Mensagem copiada com sucesso!</p> -->
+            <img class="foto" src="imgs/foto.png" alt="">
+            <p class="erroSemTexto">Nenhum texto foi encontrado</p>
+            <span class="botoes">
+                <button class="copiar" onclick="copiarTexto()">copiar</button>
+            </span>
         </div>
 
     </div>
