@@ -55,10 +55,6 @@ function criptografarTexto(){
         document.getElementsByClassName("mensagem")[0].value = '';
     };
     renderizarResultado(texto);
-    console.log(texto);
-
-    
-
 }
 
 function descriptografarTexto(){
@@ -69,10 +65,11 @@ function descriptografarTexto(){
         document.getElementsByClassName("mensagem")[0].value = '';
     };
     renderizarResultado(texto);
-    console.log(texto);
 }
 
 function copiarTexto (){
+    
+
     console.log('copiar texto');
 }
 
