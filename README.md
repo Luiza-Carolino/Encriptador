@@ -3,11 +3,11 @@ Challenge ONE, Decodificador de Textos
 O Decodificador de Texto é um projeto do programa Oracle Next Education, projetada para cifrar textos, permitindo a troca de mensagens confidenciais entre indivíduos que compartilham o conhecimento do método criptográfico empregado.
 
 As "chaves" de criptografia utilizadas são:
-A letra "e" é convertida para "enter"
-A letra "i" é convertida para "imes"
-A letra "a" é convertida para "ai"
-A letra "o" é convertida para "ober"
-A letra "u" é convertida para "ufat"
+- A letra "e" é convertida para "enter"
+- A letra "i" é convertida para "imes"
+- A letra "a" é convertida para "ai"
+- A letra "o" é convertida para "ober"
+- A letra "u" é convertida para "ufat"
 
 Requisitos:
 - Deve funcionar apenas com letras minúsculas
@@ -15,8 +15,8 @@ Requisitos:
 - Deve ser possível converter uma palavra para a versão criptografada e também retornar uma palavra criptografada para a versão original.
 
 Por exemplo:
-"gato" => "gaitober"
-gaitober" => "gato"
+- "gato" => "gaitober"
+- gaitober" => "gato"
 
 A página deve ter campos para inserção do texto a ser criptografado ou descriptografado, e a pessoa usuária deve poder escolher entre as duas opções
 O resultado deve ser exibido na tela.
@@ -28,3 +28,5 @@ Trabalhando com o sistema ágil de desenvolvimento, utilizando o Trello da segui
 - Já na coluna Desenvolvendo ficarão os elementos que você estiver desenvolvendo no momento.
 - No Pausado estarão os elementos que você começou a desenvolver, mas precisou parar por algum motivo.
 - Por fim, a coluna Concluído terá os elementos já concluídos.
+
+<img src="imgs/foto.png" alt="foto do decodificador de texto final">
