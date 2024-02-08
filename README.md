@@ -1,4 +1,4 @@
-Challenge ONE, Decodificador de Textos 
+<h1>Challenge ONE, Decodificador de Textos</h1>h1>
 
 O Decodificador de Texto é um projeto do programa Oracle Next Education, projetada para cifrar textos, permitindo a troca de mensagens confidenciais entre indivíduos que compartilham o conhecimento do método criptográfico empregado.
 
@@ -29,4 +29,5 @@ Trabalhando com o sistema ágil de desenvolvimento, utilizando o Trello da segui
 - No Pausado estarão os elementos que você começou a desenvolver, mas precisou parar por algum motivo.
 - Por fim, a coluna Concluído terá os elementos já concluídos.
 
-<img src="imgs/foto.png" alt="foto do decodificador de texto final">
+<img src="imgs/decodificadorInicial.png" alt="foto do decodificador de texto inicial">
+<img src="imgs/decodificadorFinal.png" alt="foto do decodificador de texto final">
