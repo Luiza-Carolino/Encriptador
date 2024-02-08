@@ -1,17 +1,24 @@
 
 function renderizarResultado(texto) {
+    const labelCopiadoSucesso = document.getElementsByClassName("copiadoSucesso")[0];
+    const labelCopiadoFalha = document.getElementsByClassName("copiadoFalha")[0];
+
     if(texto) {
         document.getElementsByClassName("foto")[0].style.display = "none";
         document.getElementsByClassName("erroSemTextop")[0].style.display = "none";
         document.getElementsByClassName("erroSemTextoh1")[0].style.display = "none";
         document.getElementsByClassName("resultado")[0].style.display = "block";
         document.getElementsByClassName("copiar")[0].style.display = "block";
+        labelCopiadoSucesso.style.display = "none";
+        labelCopiadoFalha.style.display = "none";
     } else {
         document.getElementsByClassName("foto")[0].style.display = "block";
         document.getElementsByClassName("erroSemTextop")[0].style.display = "block";
         document.getElementsByClassName("erroSemTextoh1")[0].style.display = "block";
         document.getElementsByClassName("resultado")[0].style.display = "none";
         document.getElementsByClassName("copiar")[0].style.display = "none";
+        labelCopiadoSucesso.style.display = "none";
+        labelCopiadoFalha.style.display = "none";
     }
 }
 
@@ -67,9 +74,20 @@ function descriptografarTexto(){
     renderizarResultado(texto);
 }
 
-function copiarTexto (){
-    
+async function copiarTexto (){
+    const labelCopiadoSucesso = document.getElementsByClassName("copiadoSucesso")[0];
+    const labelCopiadoFalha = document.getElementsByClassName("copiadoFalha")[0];
+    const texto = document.getElementsByClassName("resultado")[0]?.value;
 
-    console.log('copiar texto');
+    try {
+        await navigator.clipboard.writeText(texto);
+        labelCopiadoSucesso.style.display = "block";
+        labelCopiadoFalha.style.display = "none";
+        console.log('Copiado para área de transferência');
+    } catch (err) {
+        labelCopiadoFalha.style.display = "block";
+        labelCopiadoSucesso.style.display = "none";
+        console.error('Falha ao copiar: ', err);
+    }
 }
 
