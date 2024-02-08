@@ -23,10 +23,14 @@ function renderizarResultado(texto) {
 }
 
 function verificarLetrasMaiusculas(texto) {
+    document.getElementsByClassName("resultado")[0].value = '';
+    document.getElementsByClassName("mensagem")[0].value = '';
     return texto === texto.toLowerCase() && texto !== texto.toUpperCase();
 }
 
 function verificarAcentos(texto) {
+    document.getElementsByClassName("resultado")[0].value = '';
+    document.getElementsByClassName("mensagem")[0].value = '';
     return texto === texto.normalize('NFD').replace(/[\u0300-\u036f]/g, "");
 }
 
