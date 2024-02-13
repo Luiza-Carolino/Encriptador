@@ -29,7 +29,7 @@ body{
     height: 100%;
     align-items: start;
     padding: 2%;
-    padding-left: 10%;
+    padding-left: 5%;
 }
 
 button {
@@ -60,7 +60,6 @@ textarea{
 
 .mensagem{
     width: 90%;
-    align-items: center;
     resize: none;
     background-color: rgb(220, 255, 255);
     font-size: 25px;
