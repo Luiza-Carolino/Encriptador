@@ -6,26 +6,25 @@
 
 @media only screen and ( max-width: 600px ) {
 
-    /* body {
-        height: 100dvh;
-    } */
+    .mensagem, .resultado, .codificar, .decodificar, .copiar, .erroSemTextoh1{
+        font-size: 20px !important;
+    }
+    .aviso, .copiadoSucesso, .copiadoFalha, .erroLetraMaiuscula, .erroAcento, .copiadoFalha, .erroSemTextop{
+        font-size: 16px !important;
+    }
+
+    .saida {
+        width: 100% !important;
+    }
 
     .desktop {
-        display: flex;
         flex-direction: column;
+        gap: 10px !important;
     }
     .logoAlura{
-        margin: 1%;
-        width: 30px;
-        height: 12px;
-    }
-    .entrada{
-        display: flex;
-        flex-direction: column;
-        width: 90%;
-        height: 100%;
-        align-items: start;
-        padding: 2%;
+        margin: 1% !important;
+        width: 30px !important;
+        height: 12px !important;
     }
     
     textarea{
@@ -33,18 +32,29 @@
         border: 1px solid rgba(0, 0, 0, 0.0);
         padding: 20px;
     }
+
+    .containerMensagem {
+        padding-bottom: 20px;
+    }
+
+    .codificar, .decodificar, .copiar{
+        width: 225px !important;
+        height: 40px !important;
+    }
 }
 
 body{
     background-color: rgb(220, 255, 255);
-    box-sizing: border-box;
+    /* background-color: #0073ff; */
+    height: 85dvh;
 }
 
 .desktop{
     display: flex;
-    height: 90%;
-    max-height: 90%;
-    overflow: hidden;
+    height: 100%;
+    gap: 100px;
+    padding-inline: 5%;
+    /* background-color: brown; */
 }
 
 .logoAlura{
@@ -54,13 +64,12 @@ body{
 }
 
 .entrada{
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
-    width: 70%;
-    height: 100%;
-    align-items: start;
-    padding: 2%;
-    padding-left: 5%;
+    justify-content: space-between;
+    align-content: space-between;
+    /* background-color: darkgoldenrod; */
 }
 
 button {
@@ -71,37 +80,41 @@ button {
 }
 
 textarea{
+    width: 100%;
+    min-width: 300px;
+    height: 100%;
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.0);
-    padding: 20px;
 }
 
 .entrada .botoes {
     display: flex;
     flex-direction: row;
     gap: 10%;
-    padding-left: 15%;
+    justify-content: center;
+    padding-inline: 10px
 }
 
 .saida .botoes {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    /* gap: 20px; */
 }
 
 .mensagem{
-    width: 90%;
+    width: 100%;
     resize: none;
     background-color: rgb(220, 255, 255);
+    /* background-color: blueviolet    ; */
     font-size: 25px;
     color: #0A3871;
 
 }
 
 .resultado{
-    width: 80%;
     resize: none;
     background-color: rgb(220, 255, 255);
+    /* background-color: chartreuse; */
     font-size: 20px;
     color: #495057;
 }
@@ -116,12 +129,13 @@ textarea{
 }
 
 .saida{
-    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: auto;
+    width: 30%;
     background-color: rgb(220, 255, 255);
+    /* background-color: blue;? */
     border-radius: 32px;
     align-items: center;
     padding: 2%;
@@ -163,6 +177,7 @@ textarea:focus {
 }
 
 .erroSemTextop, .erroSemTextoh1 {
+    text-align: center;
     font-weight: bold;
     margin: 0;
     padding: 0;
@@ -178,6 +193,7 @@ textarea:focus {
     color: green;
 }
 
-/* .copiadoFalha {
-    color: red;
-} */
+.containerMensagem {
+    display: flex;
+    flex-grow: 1;
+}
