@@ -45,7 +45,6 @@
 
 body{
     background-color: rgb(220, 255, 255);
-    /* background-color: #0073ff; */
     height: 85dvh;
 }
 
@@ -54,7 +53,6 @@ body{
     height: 100%;
     gap: 100px;
     padding-inline: 5%;
-    /* background-color: brown; */
 }
 
 .logoAlura{
@@ -69,7 +67,6 @@ body{
     flex-direction: column;
     justify-content: space-between;
     align-content: space-between;
-    /* background-color: darkgoldenrod; */
 }
 
 button {
@@ -98,14 +95,12 @@ textarea{
 .saida .botoes {
     display: flex;
     flex-direction: row;
-    /* gap: 20px; */
 }
 
 .mensagem{
     width: 100%;
     resize: none;
     background-color: rgb(220, 255, 255);
-    /* background-color: blueviolet    ; */
     font-size: 25px;
     color: #0A3871;
 
@@ -114,7 +109,6 @@ textarea{
 .resultado{
     resize: none;
     background-color: rgb(220, 255, 255);
-    /* background-color: chartreuse; */
     font-size: 20px;
     color: #495057;
 }
@@ -135,7 +129,6 @@ textarea{
     height: auto;
     width: 30%;
     background-color: rgb(220, 255, 255);
-    /* background-color: blue;? */
     border-radius: 32px;
     align-items: center;
     padding: 2%;
